@@ -59,6 +59,30 @@ public class Arrays01 {
         names[0] = "Ömer Can";
         System.out.println(Arrays.toString(names));   //[Ömer Can, Veli Can, Ayşe Hanım]
 
+
+
+        //boolean tipinde dizi oluşturma
+        boolean[] flags = new boolean[5];  // 5 elemanlı bir boolean dizisi oluşturulur
+
+// Dizinin elemanlarına değer atama
+        flags[0] = true;
+        flags[1] = false;
+        flags[2] = true;
+        flags[3] = false;
+        flags[4] = true;
+
+        for (boolean flag : flags) {
+            System.out.println(flag);
+        }
+
+
+        //2.yol
+        boolean[] flags1 = {true, false, true, false, true};  // Diziyi doğrudan değerlerle başlatma
+
+        for (boolean flag : flags1) {
+            System.out.println(flag);  // Elemanları yazdırma
+        }
+
         //-----------------------------------------------
 
         //Ornek 1: String array olusturun, icine 5 tane eleman ekleyin, tum elemanlarin
@@ -97,5 +121,18 @@ public class Arrays01 {
             sum = sum + w.length();
         }
         System.out.println(sum);
+
+
+        //Stringdeki karakter sayısı için
+        String deneme="foreach kontrol";
+        int sum1=0;
+        for (char w:deneme.toCharArray())
+        {
+            sum1++;
+        }
+        System.out.println(sum1);
+
+
+
     }
 }
