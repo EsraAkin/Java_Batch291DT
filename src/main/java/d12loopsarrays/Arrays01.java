@@ -97,6 +97,8 @@ public class Arrays01 {
         cities[3] = "Adana";
         cities[4] = "Ankara";
 
+        System.out.println("Şehirler: "+Arrays.toString(cities));
+
         //1. yol: for loop
         int totalchar = 0;
 
@@ -130,7 +132,7 @@ public class Arrays01 {
         {
             sum1++;
         }
-        System.out.println(sum1);
+        System.out.println("for each Stringde kullanımı: "+sum1);
 
 
 
