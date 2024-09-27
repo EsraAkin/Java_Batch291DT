@@ -17,11 +17,12 @@ public class Arrays03 {
         for (int w : numbers) { //w, dizideki her bir elemanı temsil eder. Yani w sırayla 12, 3, -3 .....olur.
 
             if (w < 5) {
-                System.out.print(w+", ");
+                System.out.print(w + ", ");  //3, -3,
             }
         }
 
         //--------------------------------------------
+        System.out.println();
         System.out.println("//-------------------------------");
         //Ornek 2: Spesifik bir elemanin Array’de olup olmadigini anlamak icin gereken kodu yaziniz.
         //Example 2: Write the code to find out if a specific element is in Array
@@ -29,18 +30,18 @@ public class Arrays03 {
         //binarySearch() methodunu sort() kullanmadan kullanmayiniz
         //binarySearch() methodu olmayan elemanlar icin size negatif tamsayi verir
         // “-” ==> isaretinin anlami eleman yok demektir
-        String names[]= {"A", "T", "K", "E", "B"};
+        String names[] = {"A", "T", "K", "E", "B"};
         Arrays.sort(names);
         System.out.println(Arrays.toString(names));  //[A, B, E, K, T]
 
-        int result=Arrays.binarySearch(names, "B");  //names dizisinin içinde B araması yaptırıyorum.
+        int result = Arrays.binarySearch(names, "B");  //names dizisinin içinde B araması yaptırıyorum.
         System.out.println(result); //1 yani B 1. indexte.
 
-        int result2=Arrays.binarySearch(names, "C");  //names dizisinin içinde B araması yaptırıyorum.
+        int result2 = Arrays.binarySearch(names, "C");  //names dizisinin içinde B araması yaptırıyorum.
         System.out.println(result2); //-3 yani C yok ama olsaydı 3. sırada olurdu. Yani 2. indexte olurdu.(-3-(-1))
 
 
-        int[] arr={2,1,7,6};
+        int[] arr = {2, 1, 7, 6};
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));  //[1, 2, 6, 7]
         System.out.println(Arrays.binarySearch(arr, 2)); //1 //1. yani indexte
@@ -61,6 +62,18 @@ public class Arrays03 {
 
         //ARASTIRMA ODEVI: Java'da char veya boolean turunde bir array olusturabilir misiniz?
 
+        char[] characters = {'a', 'd', 'c', 'm'};
+        System.out.println("characters = " + Arrays.toString(characters)); //characters = [a, d, c, m]
+        Arrays.sort(characters);
+        System.out.println("characters = " + Arrays.toString(characters)); //characters = [a, c, d, m]
+
+
+        boolean[] true_false = {true, true, false, true};
+        System.out.println(Arrays.toString(true_false)); //[true, true, false, true]
+
+
+        //------------------------------------------------------------------------------------------
+
         System.out.println("//------------------------");
         //Ornek 3: Size verilen bir cumlede kac kelime oldugunu gosteren kodu yaziniz.
         //Example 3: Write the code that shows you how many words are in a given sentence.
@@ -70,7 +83,7 @@ public class Arrays03 {
         String s1 = "Java is easy. Learn Java earn money.";
 
         System.out.println(s1);
-        String[] words= s1.split(" ");  //splitle boşluklardan parçalayıp diziye attım.
+        String[] words = s1.split(" ");  //splitle boşluklardan parçalayıp diziye attım.
         System.out.println(Arrays.toString(words));
         System.out.println(words.length);  //7
 
