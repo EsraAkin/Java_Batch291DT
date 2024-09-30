@@ -15,7 +15,7 @@ public class ForLoops04 {
         System.out.println("Satır sayısını giriniz: ");
         int row = input.nextInt();
 
-        System.out.println("Satır sayısını giriniz: ");
+        System.out.println("Sütun sayısını giriniz: ");
         int colomn = input.nextInt();
 
   //      System.out.println("Karakter gir: ");
@@ -38,6 +38,13 @@ Homework: Draw the following figure using for-loop.
 	* * * *
 
 */
+        for (int i = 1; i <5 ; i++) {
+            for (int j = 1; j <=i ; j++) {
+
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
 
     }
 }
