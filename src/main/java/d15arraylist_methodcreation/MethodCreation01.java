@@ -19,7 +19,7 @@ public class MethodCreation01 {
         //1- main metodunda sum(3, 5) çağrısında 3 ve 5 değerleri argümanlardır.
         //2- sum metodunun tanımında a ve b parametrelerdir.
 
-        int result=sum(3,5);   //argüman
+        int result = sum(3, 5)*5;   //argüman
         System.out.println(result);
 
     }   //main dışı
@@ -28,6 +28,7 @@ public class MethodCreation01 {
 
     public static int sum(int a, int b) { //bana int türünde değer döndürecek// Buradaki a ve b parametre
         return a + b;    //Çağrıldığı yere veriyi göndemek için return kullanıyoruz.
+
     }
 
 

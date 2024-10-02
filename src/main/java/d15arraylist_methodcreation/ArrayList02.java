@@ -37,18 +37,35 @@ siz bir elemani silince o 4 uzerinden devam etmeye calisacagi icin tutarsizlik o
         }
         System.out.println(r); HATA */
 
+        //1. Yol:
+        /*for (int i = 0; i < r.size(); i++) {
 
-        for (int i = 0; i < r.size(); i++) {
-
-            if(r.get(i).contains("a")){               //r listine git, i. elemanı(ilk etapta Manisa) getir. a içeriyor mu bak.)
+            if (r.get(i).contains("a")) {               //r listine git, i. elemanı(ilk etapta Manisa) getir. a içeriyor mu bak.)
 
                 r.remove(i);
-               i--;                                     //Her eleman sildiğimde size değerini de 1 azaltmam gerek.
+                i--;                                     //Her eleman sildiğimde size değerini de 1 azaltmam gerek.
 
             }
-            
+
         }
-        System.out.println(r);
+        System.out.println(r);*/
+
+
+        //2. Yol (1. yolla aynı sadece i-- demeye gerek kalmadı.)
+        for (int i = r.size()-1; i > -1; i--) {
+
+            if (r.get(i).contains("a")) {
+                r.remove(i);
+            }
+        }
+        System.out.println(r);   //[Niğde]
+
+
+
+
+
+
+
     }
 }
 
