@@ -1,6 +1,8 @@
 package d14multidimensionalarrays_arraylist;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class ArrayList01 {
     public static void main(String[] args) {
@@ -97,10 +99,30 @@ public class ArrayList01 {
         System.out.println("a = " + a);
         System.out.println(ages);              //[1, 25, 3, 9, 28, 12, 7, 5, 11, 1, 2, 3]
 
+        Integer b=ages.set(3,25);
+        System.out.println("dd"+ages);        //dd[1, 25, 3, 25, 28, 12, 7, 5, 11, 1, 2, 3]
 
+//        List<String> urunler = new ArrayList<>();
+//        urunler.add("Domates");
+//        urunler.add("Patates");
+//        urunler.add("Biber");
+//        urunler.add("Soğan");
+//        urunler.add("Havuç");
+//        urunler.add("Elma");
+//        urunler.add("Muz");
+//        urunler.add("Çilek");
+//        urunler.add("Kavun");
+//        urunler.add("Üzüm");
+//        urunler.add("Limon");
 
+        //System.out.println(urunler);
+        ArrayList<String> urunler2=new ArrayList<>(Arrays.asList("Domates", "Patates", "Biber", "Soğan", "Havuç", "Elma", "Muz", "Çilek", "Kavun", "Üzüm", "Limon"));
+     //   [Domates, Patates, Biber, Soğan, Havuç, Elma, Muz, Çilek, Kavun, Üzüm, Limon]
+        System.out.println("urunler 2:"+urunler2);
+        ArrayList<String> urunler3=new ArrayList<>(Arrays.asList("Domates", "Patates", "Biber", "Soğan", "Havuç", "Elma", "Muz", "Çilek", "Kavun", "Üzüm", "Limon"));
 
-
+        urunler3.add("Marulll");
+        System.out.println(urunler3);
 
 
 

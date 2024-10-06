@@ -7,7 +7,7 @@ public class ArrayList02 {
         //Ornek 1: Bir Integer ArrayList oluşturun ve tek olanları 11 olarak değiştirin.
         //Example 1: Create an Integer ArrayList and change the odd ones to 11
 
-        ArrayList<Integer> list = new ArrayList<>();  //Sağ tarafa konstakter denir.
+        ArrayList<Integer> list = new ArrayList<>();  //Sağ tarafa constacter denir.
         list.add(23);
         list.add(24);
         list.add(12);

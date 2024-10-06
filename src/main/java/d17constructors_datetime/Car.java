@@ -1,4 +1,4 @@
-package d16methodcreation_overloading_varargs_passbyvalue;
+package d17constructors_datetime;
 
 public class Car {
 
@@ -61,13 +61,42 @@ Adina da "runner" eklenir.*/
     //*** Constracter static olamaz. Çünkü statikten obje üretilemez. Non statikten üretebiliriz.
 
 
-   /* public Car (String brand, String model, int year, boolean hybrid){
-this.brand=brand; // Bu classtaki brand değerini kullanma, ben sana parametre olarak göndereceğim.
+    public Car(String brand, String model, int year, boolean hybrid) {
+        this.brand = brand; // Bu classtaki brand değerini kullanma, ben sana parametre olarak göndereceğim.
+        this.model = model;
+        this.year = year;
+        this.hybrid = hybrid;
+
+    }
+    //8-Parametreli constructor’i olusturdugumuzda Java default olani sildi, CarRunner’dakiler o yuzden
+    //hataya dustu. yani  Car c1=new Car(); bu tanınmıyor.  Duzeltmek icin CarRunner’a gidelim
+
+
+    //14- Farkli parametreli constructor olusturalim
+    public Car(String brand, String model){
+        this.brand=brand;
         this.model=model;
-        this.year=year;
-        this.hybrid=hybrid;
+    }
 
-    }*/
+    public Car(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
+    }
+
+    //15- CarRunner’a gidip bu constructor’lari kullanalim
+
+    //12- toString uretelim
 
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                ", hybrid=" + hybrid +
+                '}';
+    }
+
+    //13- CarRunner’a gidip tekrar Run edelim
 }

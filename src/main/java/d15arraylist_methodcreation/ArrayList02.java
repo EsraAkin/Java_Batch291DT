@@ -50,6 +50,12 @@ siz bir elemani silince o 4 uzerinden devam etmeye calisacagi icin tutarsizlik o
         }
         System.out.println(r);*/
 
+        for (int i = r.size(); i >0 ; i--) {
+            if(r.get(i).contains("a")){
+                r.remove(i);
+            }
+        }
+
 
         //2. Yol (1. yolla aynı sadece i-- demeye gerek kalmadı.)
         for (int i = r.size()-1; i > -1; i--) {

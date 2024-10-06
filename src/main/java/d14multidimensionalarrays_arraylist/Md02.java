@@ -37,7 +37,7 @@ public class Md02 {
             }
 
         }
-        System.out.println(Arrays.toString(newArr));
+        System.out.println(Arrays.toString(newArr));  //[5, 4, 2, 3, 2]
 
     }
 }

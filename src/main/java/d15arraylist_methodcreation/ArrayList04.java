@@ -21,7 +21,7 @@ public class ArrayList04 {
         // myList.add(5); //HATA
         // myList.clear();  //HATA
         myList.set(0,5);
-        System.out.println(myList);//[1, 3, 4, 9, 7]
+        System.out.println(myList);//[5, 3, 4, 9, 7]
         System.out.println(myList.size());  //5
 
         //ArrayList’lerin sagladigi bazi methodlari kullanmak istiyorsaniz ve

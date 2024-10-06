@@ -33,5 +33,6 @@ public class ArrayList01 {
         }
         System.out.println(b);    //[J, a, v]
 
+
     }
 }
