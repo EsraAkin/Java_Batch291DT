@@ -33,6 +33,9 @@ public class CarRunner {
         Car c3=new Car("Tofaş", "Şahin");
         System.out.println(c3);
 
+        Car c4=new Car("Mercedes", "ggg", 1985, true);
+        System.out.println("c4"+c4);
+
 
     }
 

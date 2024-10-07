@@ -6,6 +6,7 @@ public class Sb03 {
         StringBuilder sb1 = new StringBuilder("Java is easy");
         System.out.println(sb1);
         sb1.reverse();
+        sb1.reverse();
         System.out.println(sb1); //ysae si avaJ
 
         //----------------------
