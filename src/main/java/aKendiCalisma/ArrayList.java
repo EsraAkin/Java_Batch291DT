@@ -1,10 +1,15 @@
-package array;
-
-import java.util.Arrays;
-import java.util.List;
+package aKendiCalisma;
 
 public class ArrayList {
     public static void main(String[] args) {
+
+
+        Tekrar.stringBuilder(3,7);
+        Tekrar.stdName="Veli";
+        System.out.println( Tekrar.stdName="Veli");
+
+
+
 
         //Hocanın notları
         //********************************
@@ -33,7 +38,6 @@ public class ArrayList {
         //İki listi birbiri içine koymak
         //Belli bir elemana erişmek
         //Belli bir elemanı güncellemek
-
 
 
 
